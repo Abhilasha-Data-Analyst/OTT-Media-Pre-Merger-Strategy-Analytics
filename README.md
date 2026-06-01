@@ -1,4 +1,4 @@
-# **🎯 OTT Media Pre-Merger using SQL**
+# **🎯 OTT Media Pre-Merger Analytics using SQL**
 
 
 
@@ -75,7 +75,7 @@ The management team requires a detailed analysis of both OTT Platform to support
 
 
 
-1. #### **Content Library Analysis**
+#### **1. Content Library Analysis**
 * Compare the total content available on both platforms.
 * Analyze content distribution by language and content type.
 
@@ -133,8 +133,6 @@ The management team requires a detailed analysis of both OTT Platform to support
 
 ## **5. Business Metrics**
 
-* **Key metrics to focus:**
-
   1. Total content items
   2. Total users
   3. Paid users
@@ -158,14 +156,15 @@ The management team requires a detailed analysis of both OTT Platform to support
 
 
 
-1. Data Collection: Import datasets into MySQL
-2. Data Processing:
+**1. Data Collection:** Import datasets into MySQL
+**2. Data Processing:**
 
    * Data validation
    * Duplicate checks
    * Data profiling
    * Relationship verification
-3. Exploratory Data Analysis (EDA)-SQL Analysis:
+     
+**3. Exploratory Data Analysis (EDA)-SQL Analysis:**
 
    * Joins
    * Aggregations
@@ -174,7 +173,7 @@ The management team requires a detailed analysis of both OTT Platform to support
    * Subqueries
    * Conditional Logic
 
-4.Business Insight Generation
+**4. Business Insight Generation**
 
 
 
@@ -208,7 +207,7 @@ from liocinema\_db.content\_consumption;
 
 
 
-#### **Data Driven Insights:👥 1. LioCinema Leads in User Acquisition**
+### **Data Driven Insights:👥 1. LioCinema Leads in User Acquisition**
 
 
 
@@ -269,7 +268,7 @@ FROM liocinema\_db.contents;
 
 
 
-#### **Data Driven Insights:🎬 2. Jotstar Built a Stronger Content Ecosystem**
+### **Data Driven Insights:🎬 2. Jotstar Built a Stronger Content Ecosystem**
 
 
 
@@ -439,7 +438,7 @@ GROUP BY subscription\_plan;
 
 
 
-#### **Data Driven Insights:👨‍👩‍👧 3. Both Platforms Attract Different Customer Segments**
+### **Data Driven Insights:👨‍👩‍👧 3. Both Platforms Attract Different Customer Segments**
 
 
 
@@ -599,7 +598,7 @@ ORDER BY subscription\_plan;
 
 
 
-#### **Data Driven Insights:📈 4. Jotstar Demonstrates Stronger User Engagement**
+### **Data Driven Insights:📈 4. Jotstar Demonstrates Stronger User Engagement**
 
 
 
@@ -738,7 +737,7 @@ GROUP BY city\_tier;
 
 
 
-#### **Data Driven Insights:📺 5. Jotstar Users Consume More Content**
+### **Data Driven Insights:📺 5. Jotstar Users Consume More Content**
 
 
 
@@ -884,7 +883,7 @@ FROM(SELECT s.user\_id,
 
 
 
-#### **Data Driven Insights:🔄 6. Low Engagement Increases Churn Risk**
+### **Data Driven Insights:🔄 6. Low Engagement Increases Churn Risk**
 
 
 
@@ -989,7 +988,7 @@ ORDER BY
 
 
 
-#### **Data Driven Insights:📉 7. LioCinema Faces Higher Downgrade Pressure**
+### **Data Driven Insights:📉 7. LioCinema Faces Higher Downgrade Pressure**
 
 
 
@@ -1113,7 +1112,7 @@ ORDER BY users\_upgraded DESC;
 
 
 
-#### **Data Driven Insights:📈 8. Jotstar Shows Strong Premium Adoption**
+### **Data Driven Insights:📈 8. Jotstar Shows Strong Premium Adoption**
 
 
 
@@ -1301,7 +1300,7 @@ ORDER BY city\_tier;
 
 #### 
 
-#### **Data Driven Insights:**💳 9. Jotstar Achieved Better Monetization
+### **Data Driven Insights:**💳**9. Jotstar Achieved Better Monetization**
 
 
 
@@ -1361,12 +1360,8 @@ WITH base\_data AS (
 &#x20;           ELSE LEAST(last\_active\_date, '2024-11-30')
 
 &#x20;       END AS effective\_end\_date
-
 &#x20; FROM jotstar\_db.subscribers
-
-&#x20; WHERE subscription\_date <= '2024-11-30'
-
-),
+&#x20; WHERE subscription\_date <= '2024-11-30'),
 
 
 
@@ -1462,7 +1457,7 @@ SELECT
 
 #### 
 
-#### **Data Driven Insights:**💰**10. Jotstar Generates Higher Revenue Despite Smaller Scale**
+### **Data Driven Insights:**💰**10. Jotstar Generates Higher Revenue Despite Smaller Scale**
 
 
 
@@ -1561,19 +1556,11 @@ SELECT
 
 
 
-📊 Project Walkthrough Video-\[Watch Dashboard Demo](Dashboard/Dashboard.mp4)
+#### **📊 Project Walkthrough Video**
+https://github.com/user-attachments/assets/20c3bf94-e4d7-4a5d-9246-5d638340e457
 
 
-
-📄 Project Presentation-(Presentation/Project\_Presentation.pdf)
-
-
-
-🖼️ Presentation Preview-
-
-
-
-##### **Contact**
+#### **Contact**
 
 Abhilasha- Data Analyst
 
